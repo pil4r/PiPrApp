@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="100" id="pzO-FS-z4h" customClass="DataViewCell" customModule="PiPr" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pzO-FS-z4h" id="fkn-WF-q4d">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contacto" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xVO-zU-i7z">
+                        <rect key="frame" x="31" y="26" width="70" height="16.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="53V-iX-sBM"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" id="l4N-Yu-C79"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                        <color key="textColor" red="0.36862745099999999" green="0.37254901959999998" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pIg-jz-86b">
+                        <rect key="frame" x="111" y="26" width="249" height="58.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" id="M7a-Ya-LcB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                        <color key="textColor" red="0.36862745099999999" green="0.37254901959999998" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="xVO-zU-i7z" firstAttribute="top" secondItem="fkn-WF-q4d" secondAttribute="topMargin" constant="15" id="0Qs-ls-gUf"/>
+                    <constraint firstAttribute="trailing" secondItem="pIg-jz-86b" secondAttribute="trailing" constant="15" id="ByY-FM-CRX"/>
+                    <constraint firstItem="pIg-jz-86b" firstAttribute="leading" secondItem="xVO-zU-i7z" secondAttribute="trailing" constant="10" id="Ftl-It-9eQ"/>
+                    <constraint firstItem="pIg-jz-86b" firstAttribute="firstBaseline" secondItem="xVO-zU-i7z" secondAttribute="firstBaseline" id="GZ9-5R-Sxz"/>
+                    <constraint firstAttribute="bottom" secondItem="pIg-jz-86b" secondAttribute="bottom" constant="15" id="fEc-lU-Ojc"/>
+                    <constraint firstItem="xVO-zU-i7z" firstAttribute="leading" secondItem="fkn-WF-q4d" secondAttribute="leadingMargin" constant="15" id="uuH-5a-kbE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="imgViewDescription" destination="pIg-jz-86b" id="VcN-bd-jxF"/>
+                <outlet property="lblTitle" destination="xVO-zU-i7z" id="7XA-Du-nJT"/>
+            </connections>
+            <point key="canvasLocation" x="-68" y="-23.388305847076463"/>
+        </tableViewCell>
+    </objects>
+</document>
